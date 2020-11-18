@@ -56,7 +56,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <linux/msm_ion.h>
 #endif
 #include <binder/MemoryHeapBase.h>
-#include <ui/ANativeObjectBase.h>
+#include <nativebase/nativebase.h>
 extern "C"{
 #include <utils/Log.h>
 }

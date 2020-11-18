@@ -121,11 +121,6 @@ libmm-vdec-inc          += $(LOCAL_PATH)/inc
 libmm-vdec-inc          += $(OMX_VIDEO_PATH)/vidc/common/inc
 libmm-vdec-inc          += $(call project-path-for,qcom-media)/mm-core/inc
 libmm-vdec-inc          += $(call project-path-for,qcom-display)/libgralloc
-libmm-vdec-inc          += frameworks/native/include/media/openmax
-libmm-vdec-inc          += frameworks/native/include/media/hardware
-libmm-vdec-inc          += frameworks/native/libs/nativewindow/include/
-libmm-vdec-inc          += frameworks/native/libs/arect/include/
-libmm-vdec-inc          += frameworks/native/libs/nativebase/include
 libmm-vdec-inc          += $(call project-path-for,qcom-display)/libqdutils
 libmm-vdec-inc      += $(call project-path-for,qcom-media)/libc2dcolorconvert
 libmm-vdec-inc      += $(call project-path-for,qcom-display)/libcopybit
@@ -154,6 +149,7 @@ LOCAL_HEADER_LIBRARIES := \
     libnativebase_headers \
     libhardware_headers \
     media_plugin_headers \
+    libutils_headers
 
 LOCAL_PRELINK_MODULE    := false
 LOCAL_SHARED_LIBRARIES  := libui libhardware liblog libutils libbinder \
